@@ -1,50 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Formulário de Contato</title>
 </head>
 <body>
-    <h2>Formulário de Contato</h2>
-    <p>Por favor, preencha os campos abaixo para entrar em contato conosco. Todos os campos são obrigatórios, exceto o assunto.</p>
-    
-    <form action="#" method="post">
-        <div>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-        </div>
-        
-        <div>
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
-        </div>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Formulário de Contato</h1>
+        </header>
 
-        <div>
-            <label for="assunto">Assunto: </label>
-            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
-        </div>
+        <section class="section formulario">
+            <h2 class="section-title">Entre em Contato</h2>
+            <form class="contact-form">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" id="name" class="form-input" required>
 
-        <div>
-            <label for="estado">Estado: </label>
-            <select id="estado" name="estado">
-                <option value="" disabled selected>Selecione seu estado</option>
-                <option value="sc">Santa Catarina</option>
-                <option value="sp">São Paulo</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="mg">Minas Gerais</option>
-                <option value="pr">Paraná</option>
-            </select>
-        </div>
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" id="email" class="form-input" required>
 
-        <div>
-            <label for="mensagem">Mensagem: </label>
-            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem..."></textarea>
-        </div>
+                <label for="message" class="form-label">Mensagem:</label>
+                <textarea id="message" class="form-input" required></textarea>
 
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+                <button type="submit" class="form-button">Enviar</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-text">Obrigado por entrar em contato!</p>
+        </footer>
+    </div>
 </body>
 </html>
